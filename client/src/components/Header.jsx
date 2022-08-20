@@ -1,12 +1,13 @@
 import React, { useState } from 'react' ;
-import {AppBar, Box, Tab, Tabs, Toolbar, useMediaQuery, useTheme} from '@mui/material';
+import {AppBar, Box, IconButton, Tab, Tabs, Toolbar, useMediaQuery, useTheme} from '@mui/material';
 
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import AppDrawer from './AppDrawer';
+import { Link } from 'react-router-dom';
 
 function Header() {
 
-    const [tab, setTab] = useState('0');
+    const [tab, setTab] = useState('/');
     const theme = useTheme() ;
 
     const mobile = useMediaQuery(theme.breakpoints.down('md')) ;
@@ -16,12 +17,14 @@ function Header() {
       };
 
   return (
-    <AppBar>
+    <AppBar position='sticky'>
         <Toolbar>
             {
                 mobile && <AppDrawer/>
             }
-            <HomeOutlinedIcon/>
+            <IconButton value = '/' component = {Link} to = {'/'} >
+                <HomeOutlinedIcon color = 'white' />
+            </IconButton>
             { !mobile &&
                 <Box sx={{ width: '100%' }}>
                     <Tabs 
@@ -30,11 +33,11 @@ function Header() {
                     onChange={ handleTabChange }
                     centered
                     >
-                        <Tab label = 'About and Skils' value = '0' />
-                        <Tab label = 'Projects' value = '1' />
-                        <Tab label = 'Education' value = '2' />
-                        <Tab label = 'Certifications' value = '4' />
-                        <Tab label = 'Profiles' value = '3' />
+                        <Tab label = 'About and Skils' value = '/aboutAndSkills' component = {Link} to = {'/aboutAndSkills'} />
+                        <Tab label = 'Projects' value = 'projects' component = {Link} to = {'/projects'} />
+                        <Tab label = 'Education' value = 'education' component = {Link} to = {'/education'} />
+                        <Tab label = 'Certifications' value = 'certificates' component = {Link} to = {'/certificates'} />
+                        <Tab label = 'Profiles' value = 'profiles' component = {Link} to = {'/profiles'} />
                     </Tabs>
                 </Box>
             }

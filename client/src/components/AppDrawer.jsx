@@ -9,7 +9,13 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const pages = ["About and Skils", "Projects", "Education", "Certifications","Profiles"];
+const pages = [ 
+  {'name' : "About and Skils" , 'url' : '/aboutAndSkills'},
+  {'name' : "Projects" , 'url' : '/projects'},
+  {'name' : "Education" , 'url' : '/education'},
+  {'name' : "Certifications" , 'url' : '/certificates'},
+  {'name' : "Profiles" , 'url' : '/profiles'},
+  ];
 
 const AppDrawer = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -23,9 +29,9 @@ const AppDrawer = () => {
       >
         <List>
           {pages.map((page, index) => (
-            <ListItemButton key={index}>
+            <ListItemButton key={index} to = {page.url}>
               <ListItemIcon>
-                <ListItemText>{page}</ListItemText>
+                <ListItemText>{page.name}</ListItemText>
               </ListItemIcon>
             </ListItemButton>
           ))}
