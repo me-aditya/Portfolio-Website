@@ -7,15 +7,15 @@ const Certificates = () => {
 
     const theme = useTheme() ;
     const mobile = useMediaQuery(theme.breakpoints.down('md')) ;
-    const spacingVal = mobile ? 7 : 4 ;
+    const direction = mobile ? "column" : "row" ;
 
   return (
     <>
         <Container style={{marginTop: '20px'}} alignItems="center">
-            <Grid container spacing={3} direction="row" alignItems="center">
+            <Grid container spacing={3} direction= {direction} alignItems="center">
                 { CERTIFICATE_DETAILS.map( (details,index) => {
                     return (
-                        <Grid item xs={spacingVal}>
+                        <Grid item xs={4}>
                             <CertificateCard props = {details} />
                         </Grid>
                     ) ;
