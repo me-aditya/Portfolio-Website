@@ -25,7 +25,6 @@ import {
   StPaulJuniorCollege, 
   VibrantAcademy
 } from '../Data/EducationDetails' ;
-import { Container } from '@mui/system';
 
 function Education() {
 
