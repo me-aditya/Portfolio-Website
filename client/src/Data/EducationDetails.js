@@ -29,14 +29,14 @@ export const StPaulJuniorCollege = {
 export const StAnthonyNationalSchool = {
     name: 'St. Anthony National School',
     type : 'Play School',
-    year : '2003 - 2005',
+    year : '2002 - 2003',
     location : 'Wardha',
 }
 
 export const AgaragamiKindergarten = {
     name: 'Agaragami Kindergarten',
     type : 'LKG and UKG',
-    year : '2002 - 2003',
+    year : '2003 - 2005',
     location : 'Wardha',
 }
 
