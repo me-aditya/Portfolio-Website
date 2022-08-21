@@ -22,7 +22,6 @@ const Certificates = () => {
                 })
                 }
             </Grid>
-            
         </Container>
     </>
   )

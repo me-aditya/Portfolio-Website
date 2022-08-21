@@ -1,5 +1,5 @@
 import React from 'react' ;
-import {useMediaQuery, useTheme  } from '@mui/material';
+import {Grid, useMediaQuery, useTheme  } from '@mui/material';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -25,6 +25,7 @@ import {
   StPaulJuniorCollege, 
   VibrantAcademy
 } from '../Data/EducationDetails' ;
+import { Container } from '@mui/system';
 
 function Education() {
 
@@ -55,11 +56,13 @@ function Education() {
             <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant={textSizeHeading} component="span" color="secondary">
-              { BITSPilani.name }
-            </Typography>
-            <Typography variant={textSize} color="secondary"> {BITSPilani.type} </Typography>
-            <Typography variant="subtitle1" color="secondary"> {BITSPilani.location} </Typography>
+            <Grid container direction= "column">
+              <Typography variant={textSizeHeading} component="span" color="secondary">
+                { BITSPilani.name }
+              </Typography>
+              <Typography variant={textSize} color="secondary"> {BITSPilani.type} </Typography>
+              <Typography variant="subtitle1" color="secondary"> {BITSPilani.location} </Typography>
+            </Grid>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -79,11 +82,13 @@ function Education() {
             <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant={textSizeHeading} component="span" color="primary">
-              { VibrantAcademy.name}
-            </Typography>
-            <Typography variant={textSize} color="primary">{VibrantAcademy.type}</Typography>
-            <Typography variant="subtitle1" color="primary"> {VibrantAcademy.location} </Typography>
+            <Grid container spacing={3} direction= "column">
+              <Typography variant={textSizeHeading} component="span" color="primary">
+                { VibrantAcademy.name}
+              </Typography>
+              <Typography variant={textSize} color="primary">{VibrantAcademy.type}</Typography>
+              <Typography variant="subtitle1" color="primary"> {VibrantAcademy.location} </Typography>
+            </Grid>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -127,11 +132,13 @@ function Education() {
             <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant={textSizeHeading} component="span" color = 'primary'>
-              {StPaulJuniorCollege.name}
-            </Typography>
-            <Typography variant={textSize} color = 'primary'> {'\n'} {StPaulJuniorCollege.type}</Typography>
-            <Typography variant="subtitle1" color = 'primary'> {'\n'}  {StPaulJuniorCollege.location} </Typography>
+            <Grid container  direction= "column">
+              <Typography variant={textSizeHeading} component="span" color = 'primary'>
+                {StPaulJuniorCollege.name}
+              </Typography>
+              <Typography variant={textSize} color = 'primary'>{StPaulJuniorCollege.type}</Typography>
+              <Typography variant="subtitle1" color = 'primary'> {StPaulJuniorCollege.location} </Typography>
+            </Grid>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -150,11 +157,13 @@ function Education() {
             <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant={textSizeHeading} component="span" color = 'secondary'>
-              {SchoolOfScholars.name}
-            </Typography>
-            <Typography variant={textSize} color = 'secondary'> {'\n'} {SchoolOfScholars.type}</Typography>
-            <Typography variant="subtitle1" color = 'secondary'> {'\n'} {SchoolOfScholars.location} </Typography>
+            <Grid container direction= "column">
+              <Typography variant={textSizeHeading} component="span" color = 'secondary'>
+                {SchoolOfScholars.name}
+              </Typography>
+              <Typography variant={textSize} color = 'secondary'> {SchoolOfScholars.type}</Typography>
+              <Typography variant="subtitle1" color = 'secondary'> {SchoolOfScholars.location} </Typography>
+            </Grid>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -198,11 +207,13 @@ function Education() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }} color = 'secondary.main'>
-            <Typography variant={textSizeHeading} component="span">
-              {StAnthonyNationalSchool.name}
-            </Typography>
-            <Typography variant={textSize} color = 'secondary.main'> {'\n'} {StAnthonyNationalSchool.type}</Typography>
-            <Typography variant="subtitle1"> {'\n'} {StAnthonyNationalSchool.location} </Typography>
+            <Grid direction= "column">
+              <Typography variant={textSizeHeading} component="span">
+                {StAnthonyNationalSchool.name}
+              </Typography>
+              <Typography variant={textSize} color = 'secondary.main' component="span"> {StAnthonyNationalSchool.type}</Typography>
+              <Typography variant="subtitle1"> {StAnthonyNationalSchool.location} </Typography>
+            </Grid>
           </TimelineContent>
         </TimelineItem>
       </Timeline>

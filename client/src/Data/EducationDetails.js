@@ -21,7 +21,7 @@ export const SchoolOfScholars = {
 
 export const StPaulJuniorCollege = {
     name: 'St. Paul Junior College',
-    type : '+1 and +2 years',
+    type : '+1 and +2',
     year : '2016 - 2018',
     location : 'Nagpur',
 }
