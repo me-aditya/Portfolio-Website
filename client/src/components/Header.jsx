@@ -33,7 +33,7 @@ function Header() {
                     onChange={ handleTabChange }
                     centered
                     >
-                        <Tab label = 'About and Skils' value = '/aboutAndSkills' component = {Link} to = {'/aboutAndSkills'} />
+                        <Tab label = 'About and Skills' value = '/aboutAndSkills' component = {Link} to = {'/aboutAndSkills'} />
                         <Tab label = 'Projects' value = 'projects' component = {Link} to = {'/projects'} />
                         <Tab label = 'Education' value = 'education' component = {Link} to = {'/education'} />
                         <Tab label = 'Certifications' value = 'certificates' component = {Link} to = {'/certificates'} />
