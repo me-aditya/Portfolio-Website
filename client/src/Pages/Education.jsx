@@ -206,7 +206,7 @@ function Education() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }} color = 'secondary.main'>
-            <Grid direction= "column">
+            <Grid container direction= "column">
               <Typography variant={textSizeHeading} component="span">
                 {StAnthonyNationalSchool.name}
               </Typography>
