@@ -11,7 +11,7 @@ const CertificateCard = ({props}) => {
                 image= {props.url} 
                 alt= { props.alt}
             />
-            <CardContent>
+            <CardContent sx={{ minHeight : 200 }}>
                 <Typography gutterBottom variant="h5" component="div">
                     {props.name}
                 </Typography>
