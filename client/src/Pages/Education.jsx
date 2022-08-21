@@ -1,4 +1,5 @@
 import React from 'react' ;
+import { Container , Grid , useMediaQuery, useTheme  } from '@mui/material';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -26,6 +27,14 @@ import {
 } from '../Data/EducationDetails' ;
 
 function Education() {
+
+  const theme = useTheme() ;
+  const mobile = useMediaQuery(theme.breakpoints.down('md')) ;
+
+  const imgSize = mobile ? 25 : 50 ;
+  const textSizeHeading = mobile ? 'text.secondary' : 'h5' ;
+  const textSize = mobile? 'text.secondary' : 'h6' ;
+
   return (
     <>
       <Timeline position="alternate">
@@ -40,16 +49,16 @@ function Education() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
-            <TimelineDot color="secondary" sx={{ width: 50, height: 50 }}>
-                <SchoolIcon sx={{ width: 50, height: 50 }}/>
+            <TimelineDot color="secondary" sx={{ width: imgSize, height: imgSize }}>
+                <SchoolIcon sx={{ width: imgSize, height: imgSize }}/>
             </TimelineDot>
             <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h5" component="span" color="secondary">
+            <Typography variant={textSizeHeading} component="span" color="secondary">
               { BITSPilani.name }
             </Typography>
-            <Typography variant="h6" color="secondary"> {BITSPilani.type} </Typography>
+            <Typography variant={textSize} color="secondary"> {BITSPilani.type} </Typography>
             <Typography variant="subtitle1" color="secondary"> {BITSPilani.location} </Typography>
           </TimelineContent>
         </TimelineItem>
@@ -64,16 +73,16 @@ function Education() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
-            <TimelineDot color="primary" sx={{ width: 50, height: 50 }}>
-                <ApartmentIcon sx={{ width: 50, height: 50 }}/>
+            <TimelineDot color="primary" sx={{ width: imgSize, height: imgSize }}>
+                <ApartmentIcon sx={{ width: imgSize, height: imgSize }}/>
             </TimelineDot>
             <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h5" component="span" color="primary">
+            <Typography variant={textSizeHeading} component="span" color="primary">
               { VibrantAcademy.name}
             </Typography>
-            <Typography variant="h6" color="primary">{VibrantAcademy.type}</Typography>
+            <Typography variant={textSize} color="primary">{VibrantAcademy.type}</Typography>
             <Typography variant="subtitle1" color="primary"> {VibrantAcademy.location} </Typography>
           </TimelineContent>
         </TimelineItem>
@@ -88,17 +97,17 @@ function Education() {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-          <TimelineDot color="secondary" sx={{ width: 50, height: 50 }}>
-                <HomeWorkIcon sx={{ width: 50, height: 50 }}/>
+          <TimelineDot color="secondary" sx={{ width: imgSize, height: imgSize }}>
+                <HomeWorkIcon sx={{ width: imgSize, height: imgSize }}/>
           </TimelineDot>
           <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }} >
-          <Typography variant="h5" component="span" color="secondary">
+          <Typography variant={textSizeHeading} component="span" color="secondary">
             {ResonanceEduventures.name}
           </Typography>
-          <Typography variant="h6" color="secondary">{ResonanceEduventures.type}</Typography>
-          <Typography variant="subtitle1" color="secondary"> {ResonanceEduventures.location} </Typography>
+          <Typography variant={textSize} color="secondary"> {'\n'}  {ResonanceEduventures.type}</Typography>
+          <Typography variant="subtitle1" color="secondary"> {'\n'} {ResonanceEduventures.location} </Typography>
         </TimelineContent>
       </TimelineItem>
         <TimelineItem>
@@ -112,17 +121,17 @@ function Education() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
-            <TimelineDot color="primary" sx={{ width: 50, height: 50 }}>
-                <LocationCityIcon sx={{ width: 50, height: 50 }}/>
+            <TimelineDot color="primary" sx={{ width: imgSize, height: imgSize }}>
+                <LocationCityIcon sx={{ width: imgSize, height: imgSize }}/>
             </TimelineDot>
             <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h5" component="span" color = 'primary'>
+            <Typography variant={textSizeHeading} component="span" color = 'primary'>
               {StPaulJuniorCollege.name}
             </Typography>
-            <Typography variant="h6" color = 'primary'>{StPaulJuniorCollege.type}</Typography>
-            <Typography variant="subtitle1" color = 'primary'> {StPaulJuniorCollege.location} </Typography>
+            <Typography variant={textSize} color = 'primary'> {'\n'} {StPaulJuniorCollege.type}</Typography>
+            <Typography variant="subtitle1" color = 'primary'> {'\n'}  {StPaulJuniorCollege.location} </Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -135,17 +144,17 @@ function Education() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-            <TimelineDot color = "secondary" sx={{ width: 50, height: 50 }} >
-                <AccountBalanceIcon sx={{ width: 50, height: 50 }}/>
+            <TimelineDot color = "secondary" sx={{ width: imgSize, height: imgSize }} >
+                <AccountBalanceIcon sx={{ width: imgSize, height: imgSize }}/>
             </TimelineDot>
             <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h5" component="span" color = 'secondary'>
+            <Typography variant={textSizeHeading} component="span" color = 'secondary'>
               {SchoolOfScholars.name}
             </Typography>
-            <Typography variant="h6" color = 'secondary'> {SchoolOfScholars.type}</Typography>
-            <Typography variant="subtitle1" color = 'secondary'> {SchoolOfScholars.location} </Typography>
+            <Typography variant={textSize} color = 'secondary'> {'\n'} {SchoolOfScholars.type}</Typography>
+            <Typography variant="subtitle1" color = 'secondary'> {'\n'} {SchoolOfScholars.location} </Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -159,17 +168,17 @@ function Education() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
-            <TimelineDot color="primary" sx={{ width: 50, height: 50 }}>
-                <MeetingRoomIcon sx={{ width: 50, height: 50 }}/>
+            <TimelineDot color="primary" sx={{ width: imgSize, height: imgSize }}>
+                <MeetingRoomIcon sx={{ width: imgSize, height: imgSize }}/>
             </TimelineDot>
             <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h5" component="span" color = 'primary.main'>
+            <Typography variant={textSizeHeading} component="span" color = 'primary.main'>
               {AgaragamiKindergarten.name}
             </Typography>
-            <Typography variant="h6" color = 'primary.main'>{AgaragamiKindergarten.type}</Typography>
-            <Typography variant="subtitle1" color = 'primary.main'> {AgaragamiKindergarten.location} </Typography>
+            <Typography variant={textSize} color = 'primary.main'> {'\n'} {AgaragamiKindergarten.type}</Typography>
+            <Typography variant="subtitle1" color = 'primary.main'> {'\n'} {AgaragamiKindergarten.location} </Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -183,17 +192,17 @@ function Education() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-              <TimelineDot color="secondary" sx={{ width: 50, height: 50 }}>
-                  <FoundationIcon sx={{ width: 50, height: 50 }}/>
+              <TimelineDot color="secondary" sx={{ width: imgSize, height: imgSize }}>
+                  <FoundationIcon sx={{ width: imgSize, height: imgSize }}/>
               </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }} color = 'secondary.main'>
-            <Typography variant="h5" component="span">
+            <Typography variant={textSizeHeading} component="span">
               {StAnthonyNationalSchool.name}
             </Typography>
-            <Typography variant="h6" color = 'secondary.main'>{StAnthonyNationalSchool.type}</Typography>
-            <Typography variant="subtitle1"> {StAnthonyNationalSchool.location} </Typography>
+            <Typography variant={textSize} color = 'secondary.main'> {'\n'} {StAnthonyNationalSchool.type}</Typography>
+            <Typography variant="subtitle1"> {'\n'} {StAnthonyNationalSchool.location} </Typography>
           </TimelineContent>
         </TimelineItem>
       </Timeline>
