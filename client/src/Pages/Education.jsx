@@ -53,6 +53,7 @@ function Education() {
                 <SchoolIcon sx={{ width: imgSize, height: imgSize }}/>
             </TimelineDot>
             <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
+            <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Grid container direction= "column">
