@@ -10,7 +10,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 
 const pages = [ 
-  {'name' : "About and Skils" , 'url' : '/aboutAndSkills'},
+  {'name' : "Experience" , 'url' : '/experience'},
   {'name' : "Projects" , 'url' : '/projects'},
   {'name' : "Education" , 'url' : '/education'},
   {'name' : "Certifications" , 'url' : '/certificates'},
