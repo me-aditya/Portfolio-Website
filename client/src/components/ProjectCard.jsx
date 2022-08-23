@@ -28,18 +28,16 @@ const ProjectCard = ({props}) => {
                             Tech Stack Used :
                         </Typography>
                     </Grid>
-                    { props.courseWebsiteIcon &&
+                    { props.techStack &&
                         <Grid>
-                            <ImageList variant="masonry" cols={3} gap={25}>
-                                { props.courseWebsiteIcon.map((item,index) => (
+                            <ImageList variant="masonry" cols={3} gap={2} height= '50px' width= '50px'>
+                                { props.techStack.map((item,index) => (
                                     <ImageListItem key={item}>
                                     <img
-                                        src= { item}
-                                        srcSet={item}
-                                        alt= {index}
+                                        src= { item.url }
+                                        srcSet={item.url}
+                                        alt= {item.alt}
                                         loading="lazy"
-                                        height= '50px'
-                                        width= '50px'
                                     />
                                     </ImageListItem>
                                 ))}
