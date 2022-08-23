@@ -61,7 +61,7 @@ const Home = () => {
                   </ImageListItem>
                 </ImageList> */}
               </Grid>
-              <Grid item style={{margin : "10px"}} >
+              <Grid item style={{marginTop : "10px",marginBottom : "10px"}} >
                 <Button variant="contained" color = 'error' size="large" target="_blank" href='https://drive.google.com/file/d/163jyaEOIweJ76pSajaYNVxE66DA8X4kN/view?usp=sharing'>
                   <FileDownloadIcon/>
                   <Typography color = 'white' variant = 'h6'>Download resume</Typography>
