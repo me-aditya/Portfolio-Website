@@ -1,7 +1,7 @@
 import { Grid, ImageList, ImageListItem , useMediaQuery, useTheme } from '@mui/material';
 import React from 'react'
 
-function NotFound() {
+const NotFound = () => {
 
   const theme = useTheme() ;
   const mobile = useMediaQuery(theme.breakpoints.down('md')) ;

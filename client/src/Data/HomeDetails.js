@@ -1,0 +1,2 @@
+export const INTRO_INFO = "Hi I'm a dynamic individual with a flare to pick new technologies. I enjoy coding and have solved bunch problems on leetcode, codeforces, cses and GFG. When I'm not coding you can find me playing cricket or watching movies. Currently I'm final year student at BITS-Pilani, Goa Campus (Tier-I University) in India, persuing BE in Electronics and Electrical. " ;
+export const INTRO_OBJECTIVE = "I am seeking a competitive and challenging environment where I can serve your organization and establish an enjoyable career for myself."
