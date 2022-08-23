@@ -50,6 +50,9 @@ const Projects = () => {
             <Grid container spacing={3} direction= {direction} alignItems="center">
               <Grid item xs={4}>
                   <ProjectCard props = {details} />
+              </Grid>\
+              <Grid item xs={4}>
+                  <ProjectCard props = {details2} />
               </Grid>
             </Grid>
       </Container>
