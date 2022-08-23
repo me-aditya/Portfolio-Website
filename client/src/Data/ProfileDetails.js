@@ -59,6 +59,11 @@ const PROFILES = [
         title: 'Codechef',
         url : 'https://www.codechef.com/users/aaditya_r7'
     },
+    {
+        img: 'https://cdn.mos.cms.futurecdn.net/4v78JvWT6RB7rhaJ3Ss8S.jpg',
+        title: 'Yahhoo!',
+        url : 'https://www.google.com/search?q=a_rathi%40rocketmail.com&rlz=1C1RXQR_enIN1009IN1009&oq=a_rathi%40rocketmail.com&aqs=chrome..69i57j69i61j69i58j69i61l2.9230j0j9&sourceid=chrome&ie=UTF-8'
+    },
 ];
 
 export default PROFILES ;
