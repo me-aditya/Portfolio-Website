@@ -59,6 +59,6 @@ const PROFILES = [
         title: 'Codechef',
         url : 'https://www.codechef.com/users/aaditya_r7'
     },
-  ];
+];
 
-  export default PROFILES ;
+export default PROFILES ;
