@@ -17,7 +17,7 @@ const PROFILES = [
     {
         img: 'https://www.xda-developers.com/files/2018/10/google-plus-logo.png',
         title: 'Google+',
-        url : 'https://www.google.com/search?q=adityarathi1212%40gmail.com&rlz=1C1RXQR_enIN1009IN1009&oq=adityarathi1212%40gmail.com&aqs=chrome.0.69i59j69i61j69i58j69i61l2.5048j0j4&sourceid=chrome&ie=UTF-8'
+        url : 'mailto:adityarathi1212@gmail.com'
     },
     {
         img: 'https://noonealone.org/wp-content/uploads/2013/11/facebook-icon.jpg',
@@ -62,7 +62,7 @@ const PROFILES = [
     {
         img: 'https://cdn.mos.cms.futurecdn.net/4v78JvWT6RB7rhaJ3Ss8S.jpg',
         title: 'Yahhoo!',
-        url : 'https://www.google.com/search?q=a_rathi%40rocketmail.com&rlz=1C1RXQR_enIN1009IN1009&oq=a_rathi%40rocketmail.com&aqs=chrome..69i57j69i61j69i58j69i61l2.9230j0j9&sourceid=chrome&ie=UTF-8'
+        url : 'mailto:a_rathi@rocketmail.com'
     },
 ];
 
