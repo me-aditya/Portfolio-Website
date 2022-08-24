@@ -57,11 +57,11 @@ function Education() {
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Grid container direction= "column">
-              <Typography variant={textSizeHeading} component="span" color="secondary">
+              <Typography variant={textSizeHeading} component="span" color="#E74C3C">
                 { BITSPilani.name }
               </Typography>
-              <Typography variant={textSize} color="secondary"> {BITSPilani.type} </Typography>
-              <Typography variant="subtitle1" color="secondary"> {BITSPilani.location} </Typography>
+              <Typography variant={textSize} color="#E74C3C"> {BITSPilani.type} </Typography>
+              <Typography variant="subtitle1" color="#E74C3C"> {BITSPilani.location} </Typography>
             </Grid>
           </TimelineContent>
         </TimelineItem>
@@ -83,11 +83,11 @@ function Education() {
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Grid container spacing={3} direction= "column">
-              <Typography variant={textSizeHeading} component="span" color="primary">
+              <Typography variant={textSizeHeading} component="span" color="#1E88E5">
                 { VibrantAcademy.name}
               </Typography>
-              <Typography variant={textSize} color="primary">{VibrantAcademy.type}</Typography>
-              <Typography variant="subtitle1" color="primary"> {VibrantAcademy.location} </Typography>
+              <Typography variant={textSize} color="#1E88E5">{VibrantAcademy.type}</Typography>
+              <Typography variant="subtitle1" color="#1E88E5"> {VibrantAcademy.location} </Typography>
             </Grid>
           </TimelineContent>
         </TimelineItem>
@@ -108,11 +108,11 @@ function Education() {
           <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }} >
-          <Typography variant={textSizeHeading} component="span" color="secondary">
+          <Typography variant={textSizeHeading} component="span" color="#2E7D32">
             {ResonanceEduventures.name}
           </Typography>
-          <Typography variant={textSize} color="secondary"> {'\n'}  {ResonanceEduventures.type}</Typography>
-          <Typography variant="subtitle1" color="secondary"> {'\n'} {ResonanceEduventures.location} </Typography>
+          <Typography variant={textSize} color="#2E7D32"> {'\n'}  {ResonanceEduventures.type}</Typography>
+          <Typography variant="subtitle1" color="#2E7D32"> {'\n'} {ResonanceEduventures.location} </Typography>
         </TimelineContent>
       </TimelineItem>
         <TimelineItem>

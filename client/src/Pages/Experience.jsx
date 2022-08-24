@@ -6,7 +6,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { Grid, Typography, Container, useTheme, useMediaQuery } from '@mui/material';
-import { AMAZON, ELECTRONO } from './ExperienceDetails';
+import { AMAZON, ELECTRONO } from '../Data/ExperienceDetails';
 
 const Experience = () => {
 
